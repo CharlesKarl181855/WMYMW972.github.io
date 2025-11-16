@@ -127,3 +127,193 @@ h2 {
     padding: 20px;
   }
 }
+.button-group a {
+  text-decoration: none;
+  display: block;
+}
+
+.option-btn {
+  transition: background 0.3s ease, transform 0.2s ease;
+  flex: 1 1 40%;
+  padding: 12px 10px;
+  border: 2px solid;
+  border-color: #555555 #000000 #000000 #555555;
+  background: #3a3a3a;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 1px 1px 0px #000;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+
+.option-btn:hover {
+  background: #4a4a4a;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.option-btn:active {
+  border-color: #000000 #555555 #555555 #000000;
+  background: #3a3a3a;
+  transform: translateY(1px);
+  box-shadow: none;
+}
+/* 子页面样式 */
+.back-nav {
+  margin-bottom: 20px;
+}
+
+.back-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #3a3a3a;
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid;
+  border-color: #555555 #000000 #000000 #555555;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background: #4a4a4a;
+}
+
+.resource-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.resource-item {
+  background: #3a3a3a;
+  padding: 15px;
+  border: 2px solid #555555;
+  box-shadow: inset -2px -2px #444444, inset 2px 2px #000000;
+}
+
+.resource-item h3 {
+  margin: 0 0 10px 0;
+  color: #79a6e0;
+}
+
+.resource-item p {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  background: #0066cc;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #004499;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background: #0077dd;
+}
+/* 子页面样式 */
+.back-nav {
+  margin-bottom: 20px;
+}
+
+.back-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #3a3a3a;
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid;
+  border-color: #555555 #000000 #000000 #555555;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background: #4a4a4a;
+}
+
+.resource-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.resource-item {
+  background: #3a3a3a;
+  padding: 15px;
+  border: 2px solid #555555;
+  box-shadow: inset -2px -2px #444444, inset 2px 2px #000000;
+  position: relative;
+}
+
+.resource-item h3 {
+  margin: 0 0 10px 0;
+  color: #79a6e0;
+  font-size: 18px;
+}
+
+.resource-item p {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #cccccc;
+}
+
+.resource-meta {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 12px;
+  font-size: 12px;
+}
+
+.file-size, .file-format, .os-arch {
+  background: #2a2a2a;
+  padding: 3px 8px;
+  border-radius: 3px;
+  color: #aaaaaa;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 8px 20px;
+  background: #0066cc;
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid;
+  border-color: #0077ee #004499 #004499 #0077ee;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.download-btn:hover {
+  background: #0077dd;
+  border-color: #0088ff #0055aa #0055aa #0088ff;
+}
+
+.download-btn:active {
+  border-color: #004499 #0077ee #0077ee #004499;
+  background: #0055bb;
+  transform: translateY(1px);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .resource-meta {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .resource-item {
+    padding: 12px;
+  }
+}
