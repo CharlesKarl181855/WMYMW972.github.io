@@ -1,19 +1,13 @@
-html {
-  background-color: #1c1c1c;
-}
-
 html, body {
+  background-color: #1c1c1c;
   color-scheme: dark;
-}
-
-body {
   margin: 0;
   padding: 0;
-  background: #1c1c1c;
   font-family: "MS Sans Serif", "Segoe UI", "Arial", sans-serif;
   color: #e0e0e0;
 }
 
+/* 标题栏 */
 .window-title-bar {
   display: flex;
   justify-content: space-between;
@@ -34,7 +28,6 @@ body {
 }
 
 .window-controls .btn {
-  display: inline-block;
   width: 18px;
   height: 18px;
   text-align: center;
@@ -50,15 +43,11 @@ body {
   background: #555555;
 }
 
-.site-header {
-  margin-bottom: 30px;
-}
-
 .site-header h1 {
   font-size: 22px;
   color: #79a6e0;
   text-align: center;
-  margin: 0;
+  margin: 0 0 30px 0;
   text-shadow: 1px 1px #000;
 }
 
@@ -66,10 +55,6 @@ h2 {
   margin-bottom: 20px;
   color: #e0e0e0;
   text-decoration: underline;
-}
-
-.back-nav {
-  margin-bottom: 20px;
 }
 
 .back-btn {
@@ -87,6 +72,7 @@ h2 {
   background: #4a4a4a;
 }
 
+/* 卡片布局 */
 .resource-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -122,7 +108,7 @@ h2 {
   display: inline-block;
   padding: 3px 8px;
   background: #0066cc;
-  color: white;
+  color: #ffffff;
   border-radius: 3px;
   font-size: 11px;
 }
@@ -133,7 +119,7 @@ h2 {
 }
 
 .card-body p {
-  margin: 0 0 12px 0;
+  margin: 0;
   font-size: 14px;
   line-height: 1.4;
   color: #cccccc;
@@ -147,7 +133,6 @@ h2 {
 }
 
 .download-btn {
-  display: inline-block;
   padding: 8px 20px;
   background: #0066cc;
   color: #ffffff;
@@ -167,4 +152,12 @@ h2 {
 .download-btn:active {
   background: #0055bb;
   transform: translateY(1px);
+  border-color: #ffffff;
+  animation: flash-border 0.6s ease;
+}
+
+@keyframes flash-border {
+  0%   { border-color: #ffffff; }
+  50%  { border-color: #ffcc00; }
+  100% { border-color: #0077ee; }
 }
